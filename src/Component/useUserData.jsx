@@ -7,7 +7,6 @@ const useUserData = () => {
 
   useEffect(() => {
     if (id) {
-<<<<<<< HEAD
      
       fetch("/src/assets/manual.json")
         .then((response) => {
@@ -18,12 +17,6 @@ const useUserData = () => {
         })
         .then((data) => {
           const users = data;
-=======
-      axios
-         .get("./manual.json")
-        .then((res) => {
-          const users = res.data;
->>>>>>> e5f37790ba303cbbc9f05c467dfde532084b782c
 
           const selectedUser = users.find((user) => user.id === Number(id)); // البحث عن المستخدم بناءً على الـ id
           if (selectedUser) {
