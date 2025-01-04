@@ -17,27 +17,28 @@ const useUserData = () => {
         })
         .then((data) => {
           const users = data;
-
-          const selectedUser = users.find((user) => user.id === Number(id)); // البحث عن المستخدم بناءً على الـ id
+          console.log(data);
+          const selectedUser = users.find((user) => user.id === Number(id)); 
           if (selectedUser) {
-            setUser(selectedUser); // حفظ المستخدم إذا وجد
+            setUser(selectedUser); 
           } else {
-            redirectTo404(); // إعادة التوجيه لصفحة 404
+            redirectTo404(); 
           }
         })
         .catch(() => {
-          window.location.href = "/4044.html"; // في حالة وجود خطأ أثناء الجلب
+        console.log("nnnnnnn");
+        
         });
     } else {
-      window.location.href = "/404.html"; // إذا لم يتم العثور على الـ id
+      window.location.href = "/404.html"; 
     }
-  }, [id]); // تشغيل مرة واحدة عند تحميل الكومبوننت
+  }, [id]); 
 
   const redirectTo404 = () => {
-    window.location.href = "/404.html"; // إعادة التوجيه إلى صفحة 404
+    window.location.href = "/404.html"; 
   };
 
-  return user; // إرجاع بيانات المستخدم
+  return user;
 };
 
 export default useUserData;
