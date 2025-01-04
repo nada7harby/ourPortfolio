@@ -1,15 +1,13 @@
 // useUserData.js
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
-
 const useUserData = () => {
   const [user, setUser] = useState(0);
-
+  const { id } = useParams(); 
   useEffect(() => {
-    const urlParams = new URLSearchParams(window.location.search); // استخراج الـ id من الـ URL
-    const id = urlParams.get('id');
-  
-    
+    // const urlParams = new URLSearchParams(window.location.search); // استخراج الـ id من الـ URL
+    // const id = urlParams.get('id');
 
     if (id) {
       axios
