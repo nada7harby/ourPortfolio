@@ -1,22 +1,24 @@
-// useUserData.js
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+
 const useUserData = () => {
   const [user, setUser] = useState(0);
   const { id } = useParams(); 
-  useEffect(() => {
-    // const urlParams = new URLSearchParams(window.location.search); // استخراج الـ id من الـ URL
-    // const id = urlParams.get('id');
 
+  useEffect(() => {
     if (id) {
-      axios
-        .get("/src/assets/manual.json")
-        .then((res) => {
-          const users = res.data;
+     
+      fetch("/src/assets/manual.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          const users = data;
 
           const selectedUser = users.find((user) => user.id === Number(id)); // البحث عن المستخدم بناءً على الـ id
-          // const selectedUser = users.find((user) => user.nickname === nickname);
           if (selectedUser) {
             setUser(selectedUser); // حفظ المستخدم إذا وجد
           } else {
@@ -27,7 +29,7 @@ const useUserData = () => {
           window.location.href = "/4044.html"; // في حالة وجود خطأ أثناء الجلب
         });
     } else {
-      window.location.href = "/404.html";// إذا لم يتم العثور على الـ id
+      window.location.href = "/404.html"; // إذا لم يتم العثور على الـ id
     }
   }, [id]); // تشغيل مرة واحدة عند تحميل الكومبوننت
 
@@ -38,44 +40,4 @@ const useUserData = () => {
   return user; // إرجاع بيانات المستخدم
 };
 
- export default useUserData;
-// useUserData.js
-// import { useState, useEffect } from 'react';
-// import { useParams } from 'react-router-dom';
-// import axios from 'axios';
-
-// const useUserData = () => {
-//   const [user, setUser] = useState(0);
-//   const { nickname } = useParams(); // جلب الـ nickname من الـ Routing
-
-//   useEffect(() => {
-//     if (nickname) {
-//       axios
-//         .get("/src/assets/manual.json")
-//         .then((res) => {
-//           const users = res.data;
-
-//           // البحث عن المستخدم بناءً على الـ nickname
-//           const selectedUser = users.find((user) => user.nickname === nickname);
-//           if (selectedUser) {
-//             setUser(selectedUser); // حفظ المستخدم إذا وجد
-//           } else {
-//             redirectTo404(); // إعادة التوجيه لصفحة 404 إذا لم يتم العثور على المستخدم
-//           }
-//         })
-//         .catch(() => {
-//           redirectTo404(); // في حالة وجود خطأ أثناء الجلب
-//         });
-//     } else {
-//       redirectTo404(); // إذا لم يتم العثور على الـ nickname
-//     }
-//   }, [nickname]); // إعادة التشغيل عند تغيير الـ nickname
-
-//   const redirectTo404 = () => {
-//     window.location.href = "/40444.html"; // إعادة التوجيه إلى صفحة 404
-//   };
-
-//   return user; // إرجاع بيانات المستخدم
-// };
-
-// export default useUserData;
+export default useUserData;
