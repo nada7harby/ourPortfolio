@@ -26,10 +26,10 @@ const useUserData = () => {
           }
         })
         .catch(() => {
-          redirectTo404(); // في حالة وجود خطأ أثناء الجلب
+          window.location.href = "/4044.html"; // في حالة وجود خطأ أثناء الجلب
         });
     } else {
-      redirectTo404(); // إذا لم يتم العثور على الـ id
+      window.location.href = "/404.html";// إذا لم يتم العثور على الـ id
     }
   }, []); // تشغيل مرة واحدة عند تحميل الكومبوننت
 
