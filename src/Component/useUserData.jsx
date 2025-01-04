@@ -74,7 +74,7 @@ const useUserData = () => {
   }, [nickname]); // إعادة التشغيل عند تغيير الـ nickname
 
   const redirectTo404 = () => {
-    window.location.href = "/404.html"; // إعادة التوجيه إلى صفحة 404
+    window.location.href = "/40444.html"; // إعادة التوجيه إلى صفحة 404
   };
 
   return user; // إرجاع بيانات المستخدم
