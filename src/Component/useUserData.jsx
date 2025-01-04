@@ -11,7 +11,7 @@ const useUserData = () => {
 
     if (id) {
       axios
-        .get("/src/assets/manual.json")
+        .get("../assets/manual.json")
         .then((res) => {
           const users = res.data;
 
