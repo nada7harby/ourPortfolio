@@ -4,12 +4,12 @@ import { data2 } from './Manual';
 
 const useUserData = () => {
   const [user, setUser] = useState(0);  // Initialize as null instead of 0
-  const { id } = useParams();
+  const { nickname } = useParams();  // تغيير 'id' لـ 'nickname'
 
   useEffect(() => {
-    if (id) {
-      // Use data2 instead of undefined 'users'
-      const selectedUser = data2.find((user) => user.id === Number(id));
+    if (nickname) {
+      // البحث باستخدام nickname بدلاً من id
+      const selectedUser = data2.find((user) => user.nickname === nickname);
 
       if (selectedUser) {
         setUser(selectedUser);
@@ -19,7 +19,7 @@ const useUserData = () => {
     } else {
       redirectTo404();
     }
-  }, [id]);
+  }, [nickname]);
 
   const redirectTo404 = () => {
     window.location.href = "/404.html";
