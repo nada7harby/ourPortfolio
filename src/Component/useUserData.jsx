@@ -29,7 +29,7 @@ const useUserData = () => {
     } else {
       window.location.href = "/404.html";// إذا لم يتم العثور على الـ id
     }
-  }, []); // تشغيل مرة واحدة عند تحميل الكومبوننت
+  }, [id]); // تشغيل مرة واحدة عند تحميل الكومبوننت
 
   const redirectTo404 = () => {
     window.location.href = "/404.html"; // إعادة التوجيه إلى صفحة 404
