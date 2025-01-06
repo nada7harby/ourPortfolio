@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import useUserData from "./useUserData";
 import "../assets/Css/Main.css";
-import { width } from "@fortawesome/free-solid-svg-icons/fa0";
+// import { width } from "@fortawesome/free-solid-svg-icons/fa0";
 const HeroSection = () => {
   var user = useUserData();
   const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div>
         <div className="container hero">
           <div className="row justify-content-around ">
-            <div className="col-lg-5 content">
+            <div className="col-lg-5 col-12 content">
               <h1>
                 Hello, I'm <span>{user.name}</span>, {user.jobTitle}
               </h1>
@@ -45,8 +45,8 @@ const HeroSection = () => {
               </div>
               {/* <p>{user.objective}</p> */}
             </div>
-            <div className="col-lg-6 imgHero">
-              <img src={user.img} style={boxStyle}></img>
+            <div className="col-lg-6 col-12 imgHero">
+              <img src={user.img[0]} style={boxStyle}></img>
               <img
                 // src="Imgs/fB.png"
                 src={isMobile ? "Imgs/CB.png" : "Imgs/fB.png"} className="back"

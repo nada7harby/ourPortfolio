@@ -20,7 +20,7 @@
   flex-direction: column;
   margin-top: 3rem;
 }
-.hero .content button {
+button {
   background-color: #e1d7b7;
   border: none;
   font-size: 30px;
@@ -57,6 +57,41 @@
   z-index: 0;
   width: 100%;
 }
+
+.About {
+  padding: 50px 0;
+}
+.About .container {
+  margin: 20px auto;
+}
+.About .aboutContent {
+  padding: 10px 0;
+}
+.About .aboutContent h1 {
+  margin: 15px 0;
+}
+.About .aboutContent p {
+  padding-left: 20px;
+  border-left: 7px solid #e1d7b7;
+  font-size: 18px;
+  margin: 30px 0;
+}
+.word {
+  color: #213555 !important;
+  letter-spacing: 2px;
+}
+.About .aboutImg h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+.About .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
+.About .contact {
+  display: flex;
+  justify-content: space-evenly;
+}
 /*########### mobile size   ####################### */
 
 @media (max-width: 500px) {
@@ -65,6 +100,7 @@
   }
   .hero {
     padding-top: 0.5rem;
+    height: 138vh;
   }
   .hero .imgHero .back {
     left: 0;
@@ -85,5 +121,12 @@
     width: 83%;
     left: 9%;
     top: -15px;
+  }
+  .display-1 {
+    font-size: 5rem !important;
+  }
+  .About .aboutContent {
+    text-align: center;
+    padding: 10px;
   }
 }
