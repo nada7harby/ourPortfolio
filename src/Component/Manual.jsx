@@ -1,9 +1,9 @@
 export  var data2=[
                {
                    "id":1,
-                   "name": "ahmed Mohamed Abubakr",
+                   "name": "Ahmed Mohamed Abubakr",
                    "nickname":"ahmed",
-                   "jobTitle": "Full-stack web developer",
+                   "jobTitle": "Full stack web developer",
                    "age": 24,
                    "image": "images/personal/profile-img.jpg",
                    "objective": "To obtain a challenging data scientist position in a dynamic and innovative organization where I can use my technical and analytical skills.",

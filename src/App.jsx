@@ -1,13 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HeroSection from './Component/HeroSection';
-import Navbarr from "./Component/Navbar"
+
+import Home from './Component/Home';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* تمرير nickname كـ param */}
-        <Route path="/:nickname" element={<Navbarr />} />
+        <Route path="/:nickname" element={<Home />} />
       </Routes>
     </Router>
   );

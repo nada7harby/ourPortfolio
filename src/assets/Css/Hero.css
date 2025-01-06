@@ -1,0 +1,44 @@
+.hero {
+  padding-top: 3.5rem;
+}
+
+.hero .content {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.hero .content button {
+  background-color: #e1d7b7;
+  border: none;
+  font-size: 30px;
+  margin: 6% 0;
+  padding: 12px 30px;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
+
+.hero .content h1 {
+  font-size: 3.8rem;
+}
+.hero .imgHero {
+  /* background-image: url("Imgs/fB.png"); */
+  position: relative;
+  text-align: center;
+}
+.hero .imgHero img:nth-child(1) {
+               z-index: 1;
+               position: absolute;
+               width: 88%;
+               left: 12%;
+               top: -1%;
+                border-radius: 0 0 101px 83px;
+}
+.hero .imgHero .back {
+  position: absolute;
+  top: 20%;
+  left: -35px;
+  z-index: 0;
+  width: 126%;
+}
