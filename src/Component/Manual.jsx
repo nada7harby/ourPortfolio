@@ -5,7 +5,7 @@ export  var data2=[
                    "nickname":"ahmed",
                    "jobTitle": "Full stack web developer",
                    "age": 24,
-                   "image": "images/personal/profile-img.jpg",
+                   "img": "Imgs/bakr.png",
                    "objective": "To obtain a challenging data scientist position in a dynamic and innovative organization where I can use my technical and analytical skills.",
                    "contacts": {
                        "phone": "201113284597",
@@ -175,6 +175,7 @@ export  var data2=[
                    "name": "Nada Harby Motawea",
                    "jobTitle": "Front-End Developer",
                    "nickname":"nada",
+                   "img":"Imgs/nada.png",
                    "contacts": {
                        "phone": "+201155226576",
                        "email": "nada123harby@gmail.com",
