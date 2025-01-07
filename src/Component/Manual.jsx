@@ -15,7 +15,7 @@ export var data2 = [
       github: "https://github.com/abubakr3800",
       linkedin:
         "https://www.linkedin.com/in/ahmed-m-abubakr-%F0%9F%87%B5%F0%9F%87%B8-491543196/",
-      instagram: "https://www.instagram.com/ahmedabubakr2000/",
+      instagram: "https://www.instagram.com/ahmed_m_abubakr/",
       facebook: "https://www.facebook.com/abobakr143",
       address: "Sohag , Egypt",
     },
@@ -60,37 +60,50 @@ export var data2 = [
         ],
       },
     ],
-    skills: [
-      {
-        name: "front-end native",
-        level: "expert",
-        description:
-          "I have a good understanding of html5, css3 and basics of js. Also, I can use bootstrap library very well in different ways.",
-      },
-      {
-        name: "Back-end native",
-        level: "Mid level developer",
-        description:
-          "I have a basic understanding of PHP programming language and how to connect it with databases and create APIs.",
-      },
-      {
-        name: "UI & UX",
-        level: "beginner",
-        description: "I have a good understanding of UI concepts.",
-      },
-      {
-        name: "analog IC Layout",
-        level: "beginner",
-        description:
-          "I have a good understanding of Cadence tool in design and create layout for ICs.",
-      },
-      {
-        name: "Linux Operating System",
-        level: "mid level",
-        description:
-          "I have a good understanding of Linux operating system and how to use it as a main operating system.",
-      },
-    ],
+    skills : [
+        {
+          name: "Front-End Development",
+          level: "Expert",
+          proficiency: "95%",
+          description:
+            "I have strong knowledge of HTML5, CSS3, and JavaScript basics. Additionally, I excel at using Bootstrap effectively in various projects, ensuring responsive designs.",
+        },
+        {
+          name: "Back-End Development",
+          level: "Mid Level Developer",
+          proficiency: "75%",
+          description:
+            "I have a solid foundation in PHP programming and database connections. My skills include creating secure and efficient APIs for web applications.",
+        },
+        {
+          name: "UI & UX",
+          level: "Beginner",
+          proficiency: "50%",
+          description:
+            "I understand basic UI concepts and their role in creating user-friendly web designs, focusing on accessibility and intuitive layouts.",
+        },
+        {
+          name: "Analog IC Layout",
+          level: "Beginner",
+          proficiency: "45%",
+          description:
+            "I have foundational experience with Cadence tools, enabling me to design and verify analog IC layouts while adhering to design rules.",
+        },
+        {
+          name: "Linux Operating System",
+          level: "Mid Level",
+          proficiency: "80%",
+          description:
+            "I am proficient in using Linux as a primary OS. My skills include basic system administration, shell scripting, and troubleshooting tasks.",
+        },
+        {
+          name: "Networking and Cybersecurity",
+          level: "Intermediate",
+          proficiency: "70%",
+          description:
+            "I completed Cisco certifications (CCNA, NDG Linux Essentials), building strong knowledge in networking, security, and system administration.",
+        },
+      ],
     interests: ["Science", "Anime", "Technology"],
     experience: [
       {
@@ -275,62 +288,45 @@ export var data2 = [
       {
         name: "Front-End Development",
         level: "Expert",
+        proficiency: "95%",
         description:
           "I have extensive experience with HTML5, CSS3, and JavaScript, as well as working with front-end frameworks such as React and Redux. I am proficient in creating responsive and interactive web applications that deliver high-quality user experiences.",
       },
       {
         name: "Back-End Development",
         level: "Mid Level Developer",
+        proficiency: "75%",
         description:
           "I have a solid understanding of back-end development using technologies such as PHP and SQL. I am able to connect back-end services with databases, create APIs, and implement data management solutions.",
       },
       {
         name: "UI & UX Design",
         level: "Intermediate",
+        proficiency: "70%",
         description:
           "I have a strong foundation in UI & UX principles, with hands-on experience in designing user-centric interfaces and improving the overall user experience through wireframes, mockups, and prototyping.",
       },
       {
         name: "React Development",
         level: "Expert",
+        proficiency: "90%",
         description:
           "I specialize in React development, building modern, efficient, and scalable web applications. I have experience in state management using Redux, component design, and routing.",
       },
-      {
-        name: "Git & Version Control",
-        level: "Expert",
-        description:
-          "I am proficient in using Git for version control, collaborating on code with teams, and managing project histories in repositories on GitHub.",
-      },
+
       {
         name: "Responsive Web Design",
         level: "Expert",
+        proficiency: "92%",
         description:
           "I am highly skilled in creating responsive designs using CSS and frameworks like Bootstrap, ensuring that web applications work seamlessly across all devices and screen sizes.",
       },
       {
         name: "Database Management",
         level: "Mid Level Developer",
+        proficiency: "75%",
         description:
           "I am capable of working with SQL databases and integrating them with web applications to manage and store data efficiently.",
-      },
-      {
-        name: "Soft Skills",
-        level: "Expert",
-        description:
-          "I have strong communication, leadership, teamwork, and problem-solving skills. I am dedicated to continuous learning and have the ability to work well under pressure to meet deadlines.",
-      },
-      {
-        name: "Project Management",
-        level: "Intermediate",
-        description:
-          "I have experience managing projects and guiding teams towards successful project completion, while maintaining high standards of quality and meeting client requirements.",
-      },
-      {
-        name: "IoT Fundamentals",
-        level: "Beginner",
-        description:
-          "I have foundational knowledge of IoT principles and technologies, gained through my training and certifications.",
       },
     ],
   },
