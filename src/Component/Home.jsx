@@ -1,7 +1,7 @@
 import About from "./About";
-import Experience from "./Experience";
 import HeroSection from "./HeroSection";
 import Navbarr from "./Navbar";
+import Projects from "./Projects";
 import Skills from "./Skills";
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
       <HeroSection></HeroSection>
       <About></About>
       <Skills />
-      <Experience />
+      <Projects/>
     </>
   );
 }
