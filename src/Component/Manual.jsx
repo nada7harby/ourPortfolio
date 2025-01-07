@@ -5,8 +5,9 @@ export var data2 = [
     nickname: "ahmed",
     jobTitle: "Full stack web developer",
     age: 24,
-    img: ["Imgs/bakr.png","Imgs/bakr2.png"],
-    objective:"Skilled Full Stack Developer with expertise in building robust and scalable web applications. Proficient in front-end frameworks like React and back-end technologies like Node.js and PHP. Successfully delivered multiple end-to-end projects, blending technical proficiency with innovative problem-solving to create seamless user experiences. Passionate about continuous learning and empowering others through technology.",
+    img: ["Imgs/bakr.png", "Imgs/bakr2.png"],
+    objective:
+      "Skilled Full Stack Developer with expertise in building robust and scalable web applications. Proficient in front-end frameworks like React and back-end technologies like Node.js and PHP. Successfully delivered multiple end-to-end projects, blending technical proficiency with innovative problem-solving to create seamless user experiences. Passionate about continuous learning and empowering others through technology.",
     contacts: {
       phone: "201113284597",
       email: "ahmed.mo.abubakr@gmail.com",
@@ -181,14 +182,14 @@ export var data2 = [
     name: "Nada Harby Motawea",
     jobTitle: "Front-End Developer",
     nickname: "nada",
-    img: ["Imgs/nada.png","Imgs/nada2.png"],
+    img: ["Imgs/nada.png", "Imgs/nada2.png"],
     contacts: {
       phone: "+201155226576",
       email: "nada123harby@gmail.com",
       github: "https://github.com/nada7harby",
       linkedin: "https://www.linkedin.com/in/nada-harby-048b36219/",
       facebook: "https://www.facebook.com/nada.harby.108/?locale=ar_AR",
-      instagram:"https://www.instagram.com/nada_harby_m/"
+      instagram: "https://www.instagram.com/nada_harby_m/",
     },
     objective:
       "Experienced Front-End Development Instructor with a passion for empowering students to build real-world web applications. Successfully trained over 400 students in web development fundamentals and advanced topics, fostering their skills through hands-on projects and interactive learning.",
@@ -272,24 +273,64 @@ export var data2 = [
     ],
     skills: [
       {
-        name: "HTML/CSS/JavaScript",
-        level: "Advanced",
+        name: "Front-End Development",
+        level: "Expert",
+        description:
+          "I have extensive experience with HTML5, CSS3, and JavaScript, as well as working with front-end frameworks such as React and Redux. I am proficient in creating responsive and interactive web applications that deliver high-quality user experiences.",
       },
       {
-        name: "React/Redux",
-        level: "Intermediate",
+        name: "Back-End Development",
+        level: "Mid Level Developer",
+        description:
+          "I have a solid understanding of back-end development using technologies such as PHP and SQL. I am able to connect back-end services with databases, create APIs, and implement data management solutions.",
       },
       {
-        name: "Git & GitHub",
+        name: "UI & UX Design",
         level: "Intermediate",
+        description:
+          "I have a strong foundation in UI & UX principles, with hands-on experience in designing user-centric interfaces and improving the overall user experience through wireframes, mockups, and prototyping.",
+      },
+      {
+        name: "React Development",
+        level: "Expert",
+        description:
+          "I specialize in React development, building modern, efficient, and scalable web applications. I have experience in state management using Redux, component design, and routing.",
+      },
+      {
+        name: "Git & Version Control",
+        level: "Expert",
+        description:
+          "I am proficient in using Git for version control, collaborating on code with teams, and managing project histories in repositories on GitHub.",
       },
       {
         name: "Responsive Web Design",
-        level: "Advanced",
+        level: "Expert",
+        description:
+          "I am highly skilled in creating responsive designs using CSS and frameworks like Bootstrap, ensuring that web applications work seamlessly across all devices and screen sizes.",
       },
       {
-        name: "UI/UX ",
+        name: "Database Management",
+        level: "Mid Level Developer",
+        description:
+          "I am capable of working with SQL databases and integrating them with web applications to manage and store data efficiently.",
+      },
+      {
+        name: "Soft Skills",
+        level: "Expert",
+        description:
+          "I have strong communication, leadership, teamwork, and problem-solving skills. I am dedicated to continuous learning and have the ability to work well under pressure to meet deadlines.",
+      },
+      {
+        name: "Project Management",
         level: "Intermediate",
+        description:
+          "I have experience managing projects and guiding teams towards successful project completion, while maintaining high standards of quality and meeting client requirements.",
+      },
+      {
+        name: "IoT Fundamentals",
+        level: "Beginner",
+        description:
+          "I have foundational knowledge of IoT principles and technologies, gained through my training and certifications.",
       },
     ],
   },

@@ -10,6 +10,9 @@ import {
 
 function About() {
   var user = useUserData();
+  if (!user) {
+               return <div>Loading...</div>;
+             }
   return (
     <>
       <div className="About">
@@ -32,7 +35,7 @@ function About() {
 
               <div className="contact">
                 <a
-                  href={user.contacts}
+                  href={user.contacts.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -41,7 +44,7 @@ function About() {
                   </span>
                 </a>
                 <a
-                  href={user.contacts}
+                  href={user.contacts.github}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -54,7 +57,7 @@ function About() {
                   </span>
                 </a>
                 <a
-                  href={user.contacts}
+                  href={user.contacts.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
