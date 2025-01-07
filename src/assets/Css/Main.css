@@ -173,7 +173,7 @@ button {
 }
 /*########### mobile size   ####################### */
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .navbar-light .navbar-brand {
     font-size: 16px;
   }
