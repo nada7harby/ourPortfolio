@@ -23,24 +23,27 @@ function Skills() {
               <div
                 key={index}
                 style={{
-                  border: "1px solid #ccc",
+                  border: "3px solid #1E2A5E",
                   margin: "10px 2px",
-                  padding: "20px",
+                  padding: "30px",
+                  borderRadius: "20px",
+                  color:""
                 }}
-                className="col-lg-3 text-center"
+                className="col-lg-3 text-center skill"
               >
                 <h3>{skill.name}</h3>
                 <p>
                   <strong>Description:</strong> {skill.description}
                 </p>
                 <p className="level">
-                  <span>Level:</span> {skill.level}
+                  <strong>Level:</strong> {skill.level}
                 </p>
                 <div className="pro">
-                <span   style={{ left: skill.proficiency  }}>{skill.proficiency}</span>
+                  <span style={{ left: skill.proficiency,color:"#55679C" }} >
+                    {skill.proficiency}
+                  </span>
                   <div className="progress">
                     <span style={{ width: skill.proficiency }}></span>
-                    
                   </div>
                 </div>
               </div>

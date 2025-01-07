@@ -97,6 +97,7 @@ button {
   position: relative;
   margin: 20px 0;
   padding: 10px 0;
+  width: 100%;
 }
 .skills .pro >span{
  position: absolute;
@@ -110,19 +111,29 @@ button {
 .skills .progress {
   position: relative;
   border-radius: 15px;
+  width: 100%;
 }
 .skills .progress span:nth-child(1) {
   background-color: #55679c;
   width: 50%;
   z-index: 0;
   border-radius: 0 10px 10px 0;
+  color: #e1d7b7;
 }
 
 .skills p{
   margin: 20px 0;
 }
-.skills .level span{
-  font-weight: 600;
+.skills .level strong{
+  font-weight: 900;
+  font-family: cursive;
+  font-size: 20px;
+}
+.skills .skill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*########### mobile size   ####################### */
