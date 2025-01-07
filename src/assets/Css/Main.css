@@ -93,19 +93,19 @@ button {
   justify-content: space-evenly;
 }
 
-.skills .pro{
+.skills .pro {
   position: relative;
   margin: 20px 0;
   padding: 10px 0;
   width: 100%;
 }
-.skills .pro >span{
- position: absolute;
- top: -20px;
- left: 50%;
- color: #213555;
- font-size: 20px;
- z-index: 10;
+.skills .pro > span {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  color: #213555;
+  font-size: 20px;
+  z-index: 10;
 }
 
 .skills .progress {
@@ -121,21 +121,56 @@ button {
   color: #e1d7b7;
 }
 
-.skills p{
+.skills p {
   margin: 20px 0;
 }
-.skills .level strong{
+.skills .level strong {
   font-weight: 900;
   font-family: cursive;
   font-size: 20px;
 }
-.skills .skill{
+.skills .skill {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
+.skill * {
+  z-index: 5;
+  
+}
+.skill:hover  *{
+  color: #fff;
+}
+.skills .skill::after {
+  position: absolute;
+  content: "";
+  border-radius: 20px;
+  bottom: 0;
+  right: 0;
+  background-color: #7C93C3;
+  width: 0;
+  height: 0;
+  /* transition: 2s; */
+  z-index: 1;
+}
+.skills .skill:hover::after {
+  animation-name: example;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+  0% {
+    width: 0%;
+    height: 0%;
+  }
 
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
 /*########### mobile size   ####################### */
 
 @media (max-width: 500px) {
